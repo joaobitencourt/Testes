@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    --main-Background: #fefefe;
+    --black: #000000;
+    --grey: #e5e5e5;
+  
+    --lima-green: #3bed0c;
+    --light-purple: #736993;
+    --black-Blur: rgba(255, 255, 255, 0.04);
+    --light-Blur: rgba(254, 254, 254, 0.97);
+    --opaque-Black: #111010;
+    --black-grey: #c4c4c4;
+    height: 100%;
+}
+.title1 {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 36px;
+    word-break: normal;
+}
+  
+  .title2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    word-break: normal;
+  }
+  
+.title3 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    word-break: normal;
+}
+  
+.title4{
+    font-family: "Sedgwick Ave Display", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+}
+  
+.title5{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    word-break: normal;
+}
+  
+p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+  
+.button {
+   font-family: "Poppins";
+    font-weight: 500;
+    line-height: 0; /*espaçamento das linhas*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid var(--black);
+    transition: 275ms ease;
+}
+  
+.button:hover{
+    background: var(--lima-green);
+    transition:  1s;
+}
+  
+.buttonBlackWhite {
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: 0; /*espaçamento das linhas*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid var(--black);
+    transition:  .5s;
+    background: var(--opaque-Black);
+}
+
+body{
+    background: var(--grey);
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+    background: none;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: var(--black);
+    border-radius: 3px;
+}  
+
+nav{
+    padding: 1.5rem 3rem;
+    background: #111010;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li p{
+    color: var(--main-Background);
+}
+
+nav ul :first-child{
+    margin-right: 1rem;
+}
+/*Side bar menu*/
+
+#sideBarMenu nav{
+    width: 20rem;   
+    background-color: var(--black-grey);
+    border-right: 2px solid var(--opaque-Black);
+    padding: 0;
+}
+
+#sideBarMenu nav ul :first-child{
+    margin-right: 0;
+    margin-top: 1rem;
+}
+
+#sideBarMenu nav ul{
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+    height: 100vh;
+}
+#sideBarMenu nav ul li {
+    line-height: 3.5rem;
+}
+
+#sideBarMenu nav ul li span.icon{
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+#sideBarMenu nav ul li a{
+    color: var(--black);
+    text-decoration: none;
+    text-align: left;
+    padding: .8rem 1rem .8rem .8rem;
+}
